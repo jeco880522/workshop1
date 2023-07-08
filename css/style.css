@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-danger {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    background-color: #ff7a7a;
+}
+
+.btn-danger:hover {
+    background-color: #f03b3b;
+}
+
+
+
+.contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff7a7a;
+    display: flex;
+    padding: 9rem 8rem 9rem 8rem;
+    gap: 1.5rem;
+    align-items: center;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-size: cover;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);  
+}
+.mt-5 .table-bordered {
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#modal {
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.table-respons {
+    overflow-y: auto;
+    max-height: 400px;
+    
+}
+.table-respons td{
+    padding: 10px;
+}
+.div-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.izquierda {
+    color: white;
+    padding-left: 4rem; /* espacio entre izquierda y derecha */
+    flex: 0 0 50%; /* */
+}
+
+.izquierda h1 {
+    font-size: 50px;
+    margin-bottom: 20px; /* margen inferior*/
+    line-height: 1.5; /* espacio entre lineas*/
+}
+
+.izquierda p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.derecha {
+    flex: 0 0 35%;
+    height: 600px;
+}
+
+.derecha .heading {
+    max-width: 100%;
+    background-color: #6055a5;
+    border-radius: 8px;
+    margin-top: 45px;
+    padding: 1rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    display: block;
+}
+
+.derecha .heading span {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.derecha .form-group #form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    /* DIV ENDS HERE*/
+}
+
+.derecha .form-group #form div {
+    flex: 1;
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    position: relative;
+}
+
+.derecha .form-group #form .div1 {
+    margin-top: 20px;
+}
+.derecha .form-group #form .div4 {
+    margin-bottom: 20px;
+}
+
+.derecha .form-group #form div .error-icon {
+    position: absolute;
+    right: 8%;
+    top: 22%;
+    display: none;
+}
+
+.derecha .form-group #form div .error-icon.visible {
+    display: inline-block; /* se muestra como un bloque y ocupe su espacio en linea*/
+}
+
+.derecha .form-group #form div input {
+    display: block; /* se convierte en un bloque y se ubican uno debajo del otro y ocuapn todo el especio del contenedor*/
+    width: 100%;
+    padding: 0.7rem 1.7rem; /* primer valor superior e inferior y segundo izquierda y derecha*/
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #ededed;
+    font-weight: bolder; /* poner la fuente en negrita*/
+    color: #3e3c49;
+}
+
+.derecha .form-group #form div input:focus { /*el usuario da click en el input*/ 
+    border: 1px solid #3e3c49;
+    color: #3e3c49;
+}
+
+.derecha .form-group #form div input.invalid {
+    border-color: #ff7a7a !important;
+    border-width: 1px !important;
+}
+
+.derecha .form-group #form div span.error {
+    display: none;
+}
+
+.derecha .form-group #form div span.error.visible {
+    display: block;
+    text-align: right;
+    color: #ff7a7a;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.derecha .form-group #form .btn {
+    display: block;
+    width: 90%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.derecha .form-group #form .btn-green:hover {
+    background-image: linear-gradient(144deg,#9081f3, #6055a5 60%,#6caef0);
+    color: #fff;
+  }
+.derecha .form-group #form .btn-green {
+    background-color: #38cc8c;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 5px;
+    border-bottom: 3px outset #38cc8c;
+    border-right: 1px solid #38cc8c;
+    border-left: 1px solid #38cc8c;
+    border-top: 1px solid #38cc8c;
+}
+.derecha .form-group #form p {
+    font-size: 12px;
+    color: #b9b6d3;
+    padding-bottom: 2.5rem;
+}
+.derecha .form-group #form p span {
+    color: #ff7a7a;
+    font-weight: 600;
+}
+
+@media (max-width: 820px) {
+    .contenedor{
+        padding: 2rem 1rem 5rem 1rem;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background-image: url("../images/bg-intro-mobile.png") !important;
+        background-size: cover;
+    }
+    .izquierda {
+        padding: 0;
+        padding-top: 25px;
+        align-items: center;
+    }
+    .izquierda h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .izquierda p {
+        width: 100%;
+        text-align: center;
+    }
+    .derecha .form-group #form{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .derecha .form-group #form div{
+        padding: 0.4rem 0.4rem;
+    }
+    .derecha .form-group #form .div1 {
+        margin-top: 10px;
+    }
+    .derecha .form-group #form .div4 {
+        margin-bottom: 10px;
+    }
+    .derecha .form-group #form .btn-green {
+        font-size: 11px;
+        width: 95%;
+        padding: 0.8rem 0.5rem;
+    }
+    #form > p {
+        text-align: center;
+        line-height: 1.8;
+    }
+    .derecha .heading {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+    .table-respons {
+        height: 200px;
+        overflow: auto;
+    }
+}
