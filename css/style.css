@@ -18,8 +18,6 @@ body {
     background-color: #f03b3b;
 }
 
-
-
 .contenedor {
     margin-left: auto;
     margin-right: auto;
@@ -194,7 +192,8 @@ body {
 .derecha .form-group #form .btn-green:hover {
     background-image: linear-gradient(144deg,#9081f3, #6055a5 60%,#6caef0);
     color: #fff;
-  }
+}
+
 .derecha .form-group #form .btn-green {
     background-color: #38cc8c;
     color: white;
